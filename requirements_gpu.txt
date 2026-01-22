@@ -1,0 +1,32 @@
+This specific configuration ensures that bitsandbytes (required for 8-bit quantization) and the CUDA-enabled version of PyTorch are installed correctly.
+
+# --- Core Application ---
+streamlit>=1.30.0
+
+# --- GPU Optimized AI Stack ---
+# Installs PyTorch with CUDA 12.1 support (Standard for modern GPUs)
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch>=2.1.0+cu121
+torchvision>=0.16.0+cu121
+torchaudio>=2.1.0+cu121
+
+# --- Transformer Stack ---
+transformers>=4.36.0
+accelerate>=0.26.0
+
+# --- Quantization & Optimization ---
+# The magic library for 8-bit loading
+bitsandbytes>=0.41.0
+scipy>=1.10.0
+
+# --- Data Handling ---
+huggingface_hub>=0.20.0
+datasets>=2.16.0
+pandas>=2.1.0
+networkx>=3.0
+
+# --- Visualization ---
+plotly>=5.18.0
+
+# --- Development Utilities ---
+scikit-learn>=1.3.0
