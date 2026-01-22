@@ -19,3 +19,5 @@ scipy
 # --- Utilities ---
 # specific encoding fix for some Windows environments
 charset-normalizer>=3.3.0
+
+bitsandbytes>=0.41.0
