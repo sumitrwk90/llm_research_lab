@@ -1,0 +1,32 @@
+=====================================================================
+                 NEURAL ARCHITECT LAB - QUICK DEMO GUIDE
+=====================================================================
+Use these recommended models to test the application quickly. 
+These models are lightweight, download fast, and run smoothly on 
+standard laptops (CPU-only friendly).
+
+--- 1. Best for "Attention (Transformer)" Testing ---
+Model ID:    distilgpt2
+Size:        ~82 MB
+Description: A lighter version of GPT-2. Extremely fast. 
+             Perfect for testing the "Perplexity" metric immediately.
+
+Model ID:    TinyLlama/TinyLlama-1.1B-Chat-v1.0
+Size:        ~1.1 GB
+Description: A very popular, high-performance small model. 
+             Use this to see how the app handles slightly larger loads.
+
+--- 2. Best for "Recurrent (RNN/RWKV)" Testing ---
+Model ID:    RWKV/rwkv-4-169m-pile
+Size:        ~300 MB
+Description: An RNN that acts like a Transformer. Good for showing 
+             your app's ability to handle non-standard architectures.
+
+---------------------------------------------------------------------
+INSTRUCTIONS:
+1. Copy one of the "Model ID" strings above (e.g., distilgpt2).
+2. Run the app: streamlit run app.py
+3. In the app sidebar, select the matching Architecture.
+4. Paste or Select the ID in the search/dropdown box.
+5. Click "Run Experiments".
+=====================================================================
