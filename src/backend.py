@@ -16,7 +16,7 @@ class ModelResearcher:
         
         models = self.api.list_models(
             sort=sort_by, direction=-1, limit=limit,
-            filter=filter_tags if filter_tags else None, task=hf_task
+            filter=filter_tags if filter_tags else None, #task=hf_task
         )
         
         model_list = []
